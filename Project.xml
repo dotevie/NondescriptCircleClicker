@@ -30,6 +30,7 @@
 	<!-- _____________________________ Path Settings ____________________________ -->
 
 	<set name="BUILD_DIR" value="export" />
+	<haxeflag name="-w" value="-WDeprecated" />
 	<source path="source" />
 	<assets path="assets" />
 

@@ -25,7 +25,7 @@ class PlayState extends FlxState {
 		if (!v) {
 			circle.drawCircle(-1, -1, -1, 0xffffdd1e);
 			for (i in textGroup.members)
-				if (i != null && i is FlxText && i.alive && i.exists && i.color != null)
+				if (i != null && i is FlxText && i.alive && i.exists)
 					i.color = 0xffffffff;
 		}
 		return rainbowMode = v;
@@ -123,7 +123,7 @@ class PlayState extends FlxState {
 		var col = flixel.util.FlxColor.fromHSL({hue = (hue + (elapsed * 100)) % 360; hue;}, 1, 0.8);
 		circle.drawCircle(-1, -1, -1, col);
 		for (i in textGroup.members)
-			if (i != null && i is FlxText && i.alive && i.exists && i.color != null)
+			if (i != null && i is FlxText && i.alive && i.exists)
 				i.color = col;
 	}
 
